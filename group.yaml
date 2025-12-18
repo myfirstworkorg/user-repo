@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: iscatalogue
-  description: The infra business unit
+  description: The team responsible for Catalogue
 spec:
   type: team
   profile:
@@ -17,6 +17,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: engineering
+  description: The Engineering business unit
 spec:
   type: team
   children: [iscatalogue]
@@ -25,6 +26,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: leadership
+  description: The leaderthip team
 spec:
   type: team
   parent: engineering
