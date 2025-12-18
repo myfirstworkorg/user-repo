@@ -28,3 +28,5 @@ metadata:
 spec:
   type: team
   parent: engineering
+  children: []
+  members: [john123]
