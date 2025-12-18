@@ -1,17 +1,17 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: backstageAdmins
+  name: iscatalogue
   description: The infra business unit
 spec:
   type: team
   profile:
-    displayName: Infrastructure
-    email: infrastructure@example.com
+    displayName: IS Catalogue
+    email: catalogue@example.com
     picture: https://example.com/groups/bu-infrastructure.jpeg
-  parent: ops
+  parent: engineering
   children: [backstage, other]
-  members: [jdoe]
+  members: [gurmeet00007, john123]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -19,4 +19,12 @@ metadata:
   name: engineering
 spec:
   type: team
-  children: []
+  children: [iscatalogue]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: leadership
+spec:
+  type: team
+  parent: engineering
