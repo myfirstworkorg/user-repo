@@ -5,7 +5,20 @@ metadata:
 spec:
   profile:
     displayName: Gurmeet Singh
-    email: gurmeet00007@gmail.com
+    email: gurmeet@test.com
   memberOf:
     - engineering
     - ISCatalogue
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: john123
+spec:
+  profile:
+    displayName: John Doe
+    email: john.doe@test.com
+  memberOf:
+    - engineering
+    - ISCatalogue
+    - leadership
