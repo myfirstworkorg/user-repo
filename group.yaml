@@ -10,7 +10,6 @@ spec:
     email: catalogue@example.com
     picture: https://example.com/groups/bu-infrastructure.jpeg
   parent: engineering
-  children: [backstage, other]
   members: [gurmeet00007, john123]
 ---
 apiVersion: backstage.io/v1alpha1
